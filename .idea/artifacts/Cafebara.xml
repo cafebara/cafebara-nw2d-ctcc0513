@@ -1,0 +1,47 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Cafebara">
+    <output-path>$PROJECT_DIR$/out/artifacts/Cafebara</output-path>
+    <root id="archive" name="Cafebara.jar">
+      <element id="archive" name="Cafebara.jar">
+        <element id="module-output" name="Cafebara" />
+      </element>
+      <element id="library" level="project" name="Maven: com.github.almasb:fxgl:17.3" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:win:21" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-web:21" />
+      <element id="library" level="project" name="Maven: org.kordamp.bootstrapfx:bootstrapfx-core:0.4.0" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-web:win:21" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-swing:win:21" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-base:11.0.1" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:21" />
+      <element id="library" level="project" name="Maven: org.kordamp.ikonli:ikonli-javafx:12.3.1" />
+      <element id="library" level="project" name="Maven: com.github.almasb:fxgl-gameplay:17.3" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-media:21" />
+      <element id="library" level="project" name="Maven: net.synedra:validatorfx:0.4.0" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-base:win:11.0.1" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-fxml:win:21" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-media:win:21" />
+      <element id="library" level="project" name="Maven: org.jetbrains.kotlin:kotlin-stdlib-common:1.8.10" />
+      <element id="library" level="project" name="Maven: org.jetbrains:annotations:13.0" />
+      <element id="library" level="project" name="Maven: com.gluonhq.attach:storage:4.0.17" />
+      <element id="library" level="project" name="Maven: com.dlsc.formsfx:formsfx-core:11.6.0" />
+      <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.14.2" />
+      <element id="library" level="project" name="Maven: com.github.almasb:fxgl-io:17.3" />
+      <element id="library" level="project" name="Maven: org.controlsfx:controlsfx:11.1.2" />
+      <element id="library" level="project" name="Maven: org.kordamp.ikonli:ikonli-core:12.3.1" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-fxml:21" />
+      <element id="library" level="project" name="Maven: com.github.almasb:fxgl-core:17.3" />
+      <element id="library" level="project" name="Maven: com.gluonhq.attach:audio:4.0.17" />
+      <element id="library" level="project" name="Maven: com.github.almasb:fxgl-entity:17.3" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-controls:win:21" />
+      <element id="library" level="project" name="Maven: eu.hansolo:tilesfx:11.48" />
+      <element id="library" level="project" name="Maven: com.gluonhq.attach:util:4.0.17" />
+      <element id="library" level="project" name="Maven: com.gluonhq.attach:lifecycle:4.0.17" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-controls:21" />
+      <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.14.2" />
+      <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.14.2" />
+      <element id="library" level="project" name="Maven: org.jetbrains.kotlin:kotlin-stdlib:1.8.10" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-swing:21" />
+      <element id="library" level="project" name="Maven: com.github.almasb:fxgl-scene:17.3" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Main-Class: cict.cafebara.Main
+Class-Path: fxgl-17.3.jar javafx-graphics-21-win.jar javafx-web-21.jar b
+ ootstrapfx-core-0.4.0.jar javafx-web-21-win.jar javafx-swing-21-win.jar
+  javafx-base-11.0.1.jar javafx-graphics-21.jar ikonli-javafx-12.3.1.jar
+  fxgl-gameplay-17.3.jar javafx-media-21.jar validatorfx-0.4.0.jar javaf
+ x-base-11.0.1-win.jar javafx-fxml-21-win.jar javafx-media-21-win.jar ko
+ tlin-stdlib-common-1.8.10.jar annotations-13.0.jar storage-4.0.17.jar f
+ ormsfx-core-11.6.0.jar jackson-annotations-2.14.2.jar fxgl-io-17.3.jar 
+ controlsfx-11.1.2.jar ikonli-core-12.3.1.jar javafx-fxml-21.jar fxgl-co
+ re-17.3.jar audio-4.0.17.jar fxgl-entity-17.3.jar javafx-controls-21-wi
+ n.jar tilesfx-11.48.jar util-4.0.17.jar lifecycle-4.0.17.jar javafx-con
+ trols-21.jar jackson-core-2.14.2.jar jackson-databind-2.14.2.jar kotlin
+ -stdlib-1.8.10.jar javafx-swing-21.jar fxgl-scene-17.3.jar
+

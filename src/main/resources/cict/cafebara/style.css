@@ -1,0 +1,53 @@
+.round-pane {
+    -fx-background-radius: 12 12 12 12;
+    -fx-border-radius: 12 12 12 12;
+    -fx-background-color: white;
+    -fx-border-width: 1.5;
+}
+
+round-image {
+    -fx-background-radius: 20%;
+}
+
+.round-image .image-view {
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;
+}
+
+.transparent{
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+.transparent-pane{
+     -fx-background-color: transparent;
+}
+.custom-tab {
+    -fx-background-color: #FFFFFF;
+    -fx-background: #132033;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Verdana';
+    -fx-border-color: #c08d2c;
+    -fx-border-width: 2px;
+    -fx-border-radius: 2.5px;
+}
+.custom-tab2 {
+    -fx-font-size: 15px;
+    -fx-font-family: 'Verdana';
+    -fx-font-weight: bold;
+    -fx-border-color: #c08d2c;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 2.5px;
+}
+
+.delete-button {
+    -fx-background-color: #710117;
+    -fx-padding: 8px 16px;
+
+}
+
+.filter-button {
+    -fx-background-color: white;
+    -fx-padding: 8px 16px;
+}
+

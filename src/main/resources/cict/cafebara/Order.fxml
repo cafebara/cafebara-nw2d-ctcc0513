@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1030.0" prefWidth="1870.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cict.cafebara.OrderController">
+   <Pane prefHeight="249.0" prefWidth="1870.0" style="-fx-background-color: black;">
+      <ImageView fitHeight="250.0" fitWidth="1870.0" pickOnBounds="true">
+         <Image url="@background/banner_gradient.png" />
+      </ImageView>
+      <ImageView fitHeight="349.0" fitWidth="237.0" layoutY="-74.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <ColorAdjust brightness="-0.37" contrast="0.05" hue="-0.02" saturation="0.02">
+               <input>
+                  <DropShadow height="76.21" radius="31.009999999999998" spread="0.18" width="49.83" />
+               </input>
+            </ColorAdjust>
+         </effect>
+         <Image url="@background/banner_coffeegrinder.png" />
+      </ImageView>
+      <ImageView disable="true" fitHeight="282.0" fitWidth="318.0" layoutX="125.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <DropShadow height="97.94" radius="47.552499999999995" spread="0.23" width="94.27">
+               <color>
+                  <Color opacity="0.8600000143051147" />
+               </color>
+            </DropShadow>
+         </effect>
+
+         <Image url="@logo/logo.png" />
+      </ImageView>
+      <ImageView blendMode="SOFT_LIGHT" cache="true" fitHeight="250.0" fitWidth="846.0" layoutX="846.0" pickOnBounds="true">
+         <effect>
+            <ColorAdjust brightness="-0.44" contrast="0.31" hue="0.05" saturation="-1.0" />
+         </effect>
+         <Image url="@background/banner_texture.jpg" />
+      </ImageView>
+      <ImageView blendMode="SOFT_LIGHT" cache="true" fitHeight="251.0" fitWidth="846.0" pickOnBounds="true" rotate="180.0">
+         <effect>
+            <ColorAdjust brightness="-0.44" contrast="0.31" hue="0.05" saturation="-1.0" />
+         </effect>
+         <Image url="@background/banner_texture.jpg" />
+      </ImageView>
+      <ImageView fitHeight="260.0" fitWidth="418.0" layoutX="1452.0" opacity="0.68" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <ColorAdjust brightness="-0.24" contrast="0.07" hue="0.02" saturation="-0.05">
+               <input>
+                  <DropShadow height="120.66" radius="45.1725" spread="0.2" width="62.03" />
+               </input>
+            </ColorAdjust>
+         </effect>
+         <Image url="@background/banner_coffeegrounds2.png" />
+      </ImageView>
+      <ImageView fitHeight="196.0" fitWidth="423.0" layoutX="1055.0" layoutY="27.0" opacity="0.83" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <ColorAdjust brightness="-0.03" contrast="0.03" hue="0.02" saturation="-0.09">
+               <input>
+                  <DropShadow height="249.17" radius="117.48249999999999" spread="0.59" width="222.76">
+                     <color>
+                        <Color red="0.024488303810358047" green="0.029026558622717857" blue="0.07894736528396606" opacity="0.8299999833106995" />
+                     </color>
+                  </DropShadow>
+               </input>
+            </ColorAdjust>
+         </effect>
+         <Image url="@background/banner_coffeecups.png" />
+      </ImageView>
+      <ImageView fitHeight="250.0" fitWidth="495.0" layoutX="602.0" opacity="0.77" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <ColorAdjust brightness="-0.16" contrast="0.02" hue="-0.02" saturation="0.05">
+               <input>
+                  <DropShadow height="208.58" radius="96.465" spread="0.57" width="179.28" />
+               </input>
+            </ColorAdjust>
+         </effect>
+         <Image url="@background/banner_coffeegrounds.png" />
+      </ImageView>
+      <Label contentDisplay="CENTER" graphicTextGap="6.0" layoutX="390.0" layoutY="31.0" lineSpacing="4.0" prefHeight="188.0" prefWidth="846.0" text="CafeBara " textAlignment="CENTER" textFill="#f5b43c">
+         <font>
+            <Font name="Sitka Text" size="140.0" />
+         </font>
+         <effect>
+            <DropShadow height="255.0" radius="115.275" spread="0.45" width="208.1">
+               <color>
+                  <Color opacity="0.7274045944213867" />
+               </color>
+            </DropShadow>
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label layoutX="403.0" layoutY="165.0" lineSpacing="5.0" prefHeight="47.0" prefWidth="685.0" text="Brewed with passion, sipped with love – that's the essence of Cafebara's coffee." textFill="WHITE">
+         <font>
+            <Font name="Verdana" size="14.0" />
+         </font>
+      </Label>
+   </Pane>
+   <TabPane layoutX="-4.0" layoutY="243.0" prefHeight="787.0" prefWidth="1875.0" side="RIGHT" styleClass="custom-tab" stylesheets="@style.css" tabClosingPolicy="UNAVAILABLE">
+      <Tab styleClass="custom-tab" text="Ordering">
+         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="795.0" prefWidth="1841.0">
+            <ImageView fitHeight="812.0" fitWidth="1861.0" layoutX="-20.0" layoutY="-12.0" pickOnBounds="true" styleClass="custom-tab:selected">
+               <Image url="@background/banner_gradient.png" />
+            </ImageView>
+            <Button fx:id="delete" layoutX="1592.0" layoutY="92.0" mnemonicParsing="false" onAction="#initialize" prefHeight="36.0" prefWidth="187.0" style="-fx-background-color: #ff0000; -fx-background-radius: 8;" styleClass="delete-button" stylesheets="@style.css" text="Delete Selected Item" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Verdana Bold" size="13.0" />
+               </font>
+            </Button>
+            <Line endX="1615.0" endY="-7.0" layoutX="251.0" layoutY="5.0" startX="-296.6666564941406" startY="-5.0" stroke="#c08d2c" strokeWidth="2.0" />
+            <ImageView fitHeight="362.0" fitWidth="482.0" layoutY="4.0" opacity="0.73" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <ColorAdjust brightness="-0.33" contrast="-0.09" hue="-0.02" saturation="-0.19">
+                     <input>
+                        <DropShadow height="32.72" radius="19.525" spread="0.07" width="47.38" />
+                     </input>
+                  </ColorAdjust>
+               </effect>
+               <Image url="@background/order_sack.png" />
+            </ImageView>
+            <ImageView blendMode="LIGHTEN" fitHeight="787.0" fitWidth="918.0" layoutX="-255.0" layoutY="474.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" rotate="48.0">
+               <effect>
+                  <ColorAdjust brightness="-0.05" contrast="-0.02" saturation="-0.26" />
+               </effect>
+               <Image url="@background/order_glitter.jpg" />
+            </ImageView>
+            <Label contentDisplay="CENTER" graphicTextGap="6.0" layoutX="866.0" layoutY="36.0" lineSpacing="4.0" prefHeight="90.0" prefWidth="345.0" style="-fx-text-fill: #f5b43c;" text="Order List" textAlignment="CENTER" textFill="#f5b43c">
+               <font>
+                  <Font name="MS PGothic" size="65.0" />
+               </font>
+            </Label>
+            <Label layoutX="866.0" layoutY="110.0" lineSpacing="5.0" prefHeight="32.0" prefWidth="345.0" text="Enjoy the delightful journey with our Order List." textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="total" ellipsisString="" layoutX="867.0" layoutY="638.0" lineSpacing="15.0" prefHeight="47.0" prefWidth="344.0" style="-fx-alignment: left; -fx-text-fill: black; -fx-background-color: white; -fx-border-color: #c08d2c; -fx-border-width: 2; -fx-border-radius: 6; -fx-background-radius: 7;" stylesheets="@style.css" text="Total: ₱ 0.0" wrapText="true">
+               <opaqueInsets>
+                  <Insets left="15.0" />
+               </opaqueInsets>
+               <font>
+                  <Font name="Verdana" size="29.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Label>
+            <Label contentDisplay="CENTER" graphicTextGap="6.0" layoutX="67.0" layoutY="40.0" lineSpacing="4.0" prefHeight="82.0" prefWidth="359.0" style="-fx-text-fill: #f5b43c;" text="The Menu" textAlignment="CENTER" textFill="#f5b43c">
+               <font>
+                  <Font name="MS PGothic" size="65.0" />
+               </font>
+            </Label>
+            <Label layoutX="76.0" layoutY="100.0" lineSpacing="5.0" prefHeight="47.0" prefWidth="685.0" text="Explore a world of flavors with 'The Menu' – where simplicity meets extraordinary taste." textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Label>
+            <ScrollPane cacheShape="false" hbarPolicy="NEVER" layoutX="52.0" layoutY="147.0" prefHeight="563.0" prefWidth="766.0" style="-fx-border-color: #d4b272; -fx-border-width: 2;" styleClass="round-pane" stylesheets="@style.css" AnchorPane.rightAnchor="1023.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <effect>
+                  <ColorAdjust />
+               </effect>
+               <VBox cacheShape="false" focusTraversable="true" layoutX="45.0" layoutY="45.0" prefHeight="250.0" prefWidth="750.0" spacing="25.0" style="-fx-background-color: white; -fx-background-radius: 7;" styleClass="round-image" stylesheets="@style.css">
+                  <padding>
+                     <Insets bottom="25.0" left="25.0" right="25.0" top="15.0" />
+                  </padding>
+                  <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="700.0" style="-fx-border-radius: 9; -fx-background-radius: 9; -fx-border-color: white; -fx-background-color: #1b2331; -fx-border-width: 1;" styleClass="transparent-pane" stylesheets="@style.css">
+                     <effect>
+                        <DropShadow offsetX="9.0" offsetY="9.0">
+                           <color>
+                              <Color red="0.7105262875556946" green="0.7105262875556946" blue="0.7105262875556946" opacity="0.6299999952316284" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <ImageView blendMode="SOFT_LIGHT" cache="true" fitHeight="251.0" fitWidth="700.0" layoutY="-1.0" pickOnBounds="true">
+                        <Image url="@background/menu_background.jpg" />
+                     </ImageView>
+                     <Label layoutX="265.0" layoutY="35.0" prefHeight="38.0" prefWidth="405.0" text="Cafebara's Black Coffee" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                        <font>
+                           <Font name="Segoe UI Semibold" size="34.0" />
+                        </font>
+                     </Label>
+                     <Label layoutX="262.0" layoutY="85.0" lineSpacing="5.0" prefHeight="64.0" prefWidth="325.0" text=" — Cafebara's signature black coffee." textFill="WHITE" wrapText="true">
+                        <font>
+                           <Font name="Verdana" size="18.0" />
+                        </font>
+                     </Label>
+                     <Label layoutX="262.0" layoutY="182.0" prefHeight="48.0" prefWidth="132.0" text="₱ 125" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                        <font>
+                           <Font name="Ebrima Bold" size="32.0" />
+                        </font>
+                     </Label>
+                     <Line endX="288.0" layoutX="379.0" layoutY="164.0" startX="-110.0" stroke="#ab7c25" strokeWidth="2.0">
+                        <rotationAxis>
+                           <Point3D />
+                        </rotationAxis>
+                     </Line>
+                     <ImageView fitHeight="223.0" fitWidth="233.0" layoutX="20.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                        <clip>
+                           <Rectangle arcHeight="25.0" arcWidth="25.0" height="210.0" width="210.0" />
+                        </clip>
+                        <Image url="@menu/coffee.jpg" />
+                        <viewport>
+                           <Rectangle2D minX="210.0" minY="210.0" />
+                        </viewport>
+                     </ImageView>
+                     <Button fx:id="item1" blendMode="MULTIPLY" defaultButton="true" layoutX="-22.0" layoutY="1.0" mnemonicParsing="false" onAction="#initialize" opacity="0.0" prefHeight="250.0" prefWidth="700.0" text="ADD" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                           <Font name="Monospaced Bold" size="20.0" />
+                        </font>
+                        <effect>
+                           <Blend />
+                        </effect>
+                        <cursor>
+                           <Cursor fx:constant="HAND" />
+                        </cursor>
+                     </Button>
+                  </Pane>
+                  <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="580.0" style="-fx-background-color: #1b2331; -fx-border-radius: 9; -fx-background-radius: 9; -fx-border-color: white; -fx-border-width: 1;" styleClass="transparent-pane" stylesheets="@style.css">
+                     <effect>
+                        <DropShadow offsetX="9.0" offsetY="9.0">
+                           <color>
+                              <Color red="0.7105262875556946" green="0.7105262875556946" blue="0.7105262875556946" opacity="0.6299999952316284" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <ImageView blendMode="SOFT_LIGHT" cache="true" fitHeight="250.0" fitWidth="700.0" pickOnBounds="true">
+                        <Image url="@background/menu_background.jpg" />
+                     </ImageView>
+                     <ImageView fitHeight="210.0" fitWidth="210.0" layoutX="20.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                        <clip>
+                           <Rectangle arcHeight="25.0" arcWidth="25.0" height="210.0" width="210.0" />
+                        </clip>
+                        <Image url="@menu/cocoablissdelight.jpg" />
+                        <viewport>
+                           <Rectangle2D minX="210.0" minY="210.0" />
+                        </viewport>
+                     </ImageView>
+                     <Label layoutX="265.0" layoutY="35.0" prefHeight="38.0" prefWidth="405.0" text="Cocoa Bliss Delight" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                        <font>
+                           <Font name="Segoe UI Semibold" size="34.0" />
+                        </font>
+                     </Label>
+                     <Label layoutX="255.0" layoutY="85.0" lineSpacing="5.0" prefHeight="79.0" prefWidth="351.0" text=" — Velvety hot cocoa crowned with fluffy marshmallows." textFill="WHITE" wrapText="true">
+                        <font>
+                           <Font name="Verdana" size="18.0" />
+                        </font>
+                     </Label>
+                     <Label layoutX="262.0" layoutY="182.0" prefHeight="41.0" prefWidth="100.0" text="₱ 185" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                        <font>
+                           <Font name="Ebrima Bold" size="32.0" />
+                        </font>
+                     </Label>
+                     <Button fx:id="item2" blendMode="MULTIPLY" defaultButton="true" mnemonicParsing="false" onAction="#initialize" opacity="0.0" prefHeight="250.0" prefWidth="700.0" text="ADD" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                           <Font name="Monospaced Bold" size="20.0" />
+                        </font>
+                        <effect>
+                           <Blend />
+                        </effect>
+                        <cursor>
+                           <Cursor fx:constant="HAND" />
+                        </cursor>
+                     </Button>
+                     <Line endX="288.0" layoutX="379.0" layoutY="164.0" startX="-110.0" stroke="#ab7c25" strokeWidth="2.0" />
+                  </Pane>
+                  <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="580.0" style="-fx-background-color: #1b2331; -fx-border-radius: 9; -fx-background-radius: 9; -fx-border-color: white; -fx-border-width: 1;" styleClass="transparent-pane" stylesheets="@style.css">
+                     <effect>
+                        <DropShadow offsetX="9.0" offsetY="9.0">
+                           <color>
+                              <Color red="0.7105262875556946" green="0.7105262875556946" blue="0.7105262875556946" opacity="0.6299999952316284" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <ImageView blendMode="SOFT_LIGHT" cache="true" fitHeight="250.0" fitWidth="700.0" pickOnBounds="true">
+                        <Image url="@background/menu_background.jpg" />
+                     </ImageView>
+                     <ImageView fitHeight="210.0" fitWidth="210.0" layoutX="20.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                        <clip>
+                           <Rectangle arcHeight="25.0" arcWidth="25.0" height="210.0" width="210.0" />
+                        </clip>
+                        <Image url="@menu/latteharmony.jpg" />
+                        <viewport>
+                           <Rectangle2D minX="210.0" minY="210.0" />
+                        </viewport>
+                     </ImageView>
+                     <Label layoutX="265.0" layoutY="38.0" prefHeight="47.0" prefWidth="405.0" text="Latte Harmony" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                        <font>
+                           <Font name="Segoe UI Semibold" size="34.0" />
+                        </font>
+                        <effect>
+                           <DropShadow height="62.04" radius="33.45" spread="0.31" width="73.76">
+                              <color>
+                                 <Color opacity="0.9122137427330017" />
+                              </color>
+                           </DropShadow>
+                        </effect>
+                     </Label>
+                     <Label layoutX="255.0" layoutY="85.0" lineSpacing="5.0" prefHeight="79.0" prefWidth="351.0" text=" — espresso and steamed milk in perfect harmony." textFill="WHITE" wrapText="true">
+                        <font>
+                           <Font name="Verdana" size="18.0" />
+                        </font>
+                        <effect>
+                           <DropShadow height="62.04" radius="33.45" spread="0.31" width="73.76">
+                              <color>
+                                 <Color opacity="0.9122137427330017" />
+                              </color>
+                           </DropShadow>
+                        </effect>
+                     </Label>
+                     <Label layoutX="262.0" layoutY="182.0" prefHeight="41.0" prefWidth="100.0" text="₱ 150" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                        <font>
+                           <Font name="Ebrima Bold" size="32.0" />
+                        </font>
+                        <effect>
+                           <DropShadow height="53.24" radius="31.25" spread="0.15" width="73.76">
+                              <color>
+                                 <Color opacity="0.8700000047683716" />
+                              </color>
+                           </DropShadow>
+                        </effect>
+                     </Label>
+                     <Button fx:id="item3" blendMode="MULTIPLY" defaultButton="true" mnemonicParsing="false" onAction="#initialize" opacity="0.0" prefHeight="250.0" prefWidth="700.0" text="ADD" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                           <Font name="Monospaced Bold" size="20.0" />
+                        </font>
+                        <effect>
+                           <Blend />
+                        </effect>
+                        <cursor>
+                           <Cursor fx:constant="HAND" />
+                        </cursor>
+                     </Button>
+                     <Line endX="288.0" layoutX="379.0" layoutY="164.0" startX="-110.0" stroke="#ab7c25" strokeWidth="2.0" />
+                  </Pane>
+                  <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="580.0" style="-fx-background-color: #1b2331; -fx-border-radius: 9; -fx-background-radius: 9; -fx-border-color: white; -fx-border-width: 1;" styleClass="transparent-pane" stylesheets="@style.css">
+                     <effect>
+                        <DropShadow offsetX="9.0" offsetY="9.0">
+                           <color>
+                              <Color red="0.7105262875556946" green="0.7105262875556946" blue="0.7105262875556946" opacity="0.6299999952316284" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <Line endX="288.0" layoutX="379.0" layoutY="164.0" startX="-110.0" stroke="#ab7c25" strokeWidth="2.0" />
+                     <ImageView blendMode="SOFT_LIGHT" cache="true" fitHeight="250.0" fitWidth="700.0" pickOnBounds="true">
+                        <Image url="@background/menu_background.jpg" />
+                     </ImageView>
+                     <ImageView fitHeight="210.0" fitWidth="210.0" layoutX="20.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                        <clip>
+                           <Rectangle arcHeight="25.0" arcWidth="25.0" height="210.0" width="210.0" />
+                        </clip>
+                        <Image url="@menu/coldbrewespresso.jpg" />
+                        <viewport>
+                           <Rectangle2D minX="210.0" minY="210.0" />
+                        </viewport>
+                     </ImageView>
+                     <Label layoutX="265.0" layoutY="35.0" prefHeight="38.0" prefWidth="405.0" text="Bold Brew Espresso" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                        <font>
+                           <Font name="Segoe UI Semibold" size="34.0" />
+                        </font>
+                     </Label>
+                     <Label layoutX="265.0" layoutY="65.0" lineSpacing="5.0" prefHeight="79.0" prefWidth="351.0" text="— robust blend with a velvety crema. " textFill="WHITE" wrapText="true">
+                        <font>
+                           <Font name="Verdana" size="18.0" />
+                        </font>
+                     </Label>
+                     <Label layoutX="262.0" layoutY="182.0" prefHeight="41.0" prefWidth="100.0" text="₱ 220" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                        <font>
+                           <Font name="Ebrima Bold" size="32.0" />
+                        </font>
+                     </Label>
+                     <Button fx:id="item4" blendMode="MULTIPLY" defaultButton="true" mnemonicParsing="false" onAction="#initialize" opacity="0.0" prefHeight="250.0" prefWidth="700.0" text="ADD" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                           <Font name="Monospaced Bold" size="20.0" />
+                        </font>
+                        <effect>
+                           <Blend />
+                        </effect>
+                        <cursor>
+                           <Cursor fx:constant="HAND" />
+                        </cursor>
+                     </Button>
+                  </Pane>
+                  <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="580.0" style="-fx-background-color: #1b2331; -fx-border-radius: 9; -fx-background-radius: 9; -fx-border-color: white; -fx-border-width: 1;" styleClass="transparent-pane" stylesheets="@style.css">
+                     <effect>
+                        <DropShadow offsetX="9.0" offsetY="9.0">
+                           <color>
+                              <Color red="0.7105262875556946" green="0.7105262875556946" blue="0.7105262875556946" opacity="0.6299999952316284" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <Line endX="288.0" layoutX="379.0" layoutY="164.0" startX="-110.0" stroke="#ab7c25" strokeWidth="2.0" />
+                     <ImageView blendMode="SOFT_LIGHT" cache="true" fitHeight="250.0" fitWidth="700.0" pickOnBounds="true">
+                        <Image url="@background/menu_background.jpg" />
+                     </ImageView>
+                     <ImageView fitHeight="210.0" fitWidth="210.0" layoutX="20.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                        <clip>
+                           <Rectangle arcHeight="25.0" arcWidth="25.0" height="210.0" width="210.0" />
+                        </clip>
+                        <Image url="@menu/gelatoeuphoriaespresso.jpg" />
+                        <viewport>
+                           <Rectangle2D minX="210.0" minY="210.0" />
+                        </viewport>
+                     </ImageView>
+                     <Label layoutX="265.0" layoutY="35.0" prefHeight="38.0" prefWidth="405.0" text="Gelato Euphoria Espresso" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                        <font>
+                           <Font name="Segoe UI Semibold" size="34.0" />
+                        </font>
+                     </Label>
+                     <Label layoutX="265.0" layoutY="85.0" lineSpacing="5.0" prefHeight="79.0" prefWidth="351.0" text=" — a delightful marriage of hot espresso and creamy gelato." textFill="WHITE" wrapText="true">
+                        <font>
+                           <Font name="Verdana" size="18.0" />
+                        </font>
+                     </Label>
+                     <Label layoutX="262.0" layoutY="182.0" prefHeight="41.0" prefWidth="100.0" text="₱ 300" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                        <font>
+                           <Font name="Ebrima Bold" size="32.0" />
+                        </font>
+                     </Label>
+                     <Button fx:id="item5" blendMode="MULTIPLY" defaultButton="true" mnemonicParsing="false" onAction="#initialize" opacity="0.0" prefHeight="250.0" prefWidth="700.0" text="ADD" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                           <Font name="Monospaced Bold" size="20.0" />
+                        </font>
+                        <effect>
+                           <Blend />
+                        </effect>
+                        <cursor>
+                           <Cursor fx:constant="HAND" />
+                        </cursor>
+                     </Button>
+                  </Pane>
+                  <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="580.0" style="-fx-background-color: #1b2331; -fx-border-radius: 9; -fx-background-radius: 9; -fx-border-color: white; -fx-border-width: 1;" styleClass="transparent-pane" stylesheets="@style.css">
+                     <effect>
+                        <DropShadow offsetX="9.0" offsetY="9.0">
+                           <color>
+                              <Color red="0.7105262875556946" green="0.7105262875556946" blue="0.7105262875556946" opacity="0.6299999952316284" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <Line endX="288.0" layoutX="379.0" layoutY="164.0" startX="-110.0" stroke="#ab7c25" strokeWidth="2.0" />
+                     <ImageView blendMode="SOFT_LIGHT" cache="true" fitHeight="250.0" fitWidth="700.0" pickOnBounds="true">
+                        <Image url="@background/menu_background.jpg" />
+                     </ImageView>
+                     <ImageView fitHeight="210.0" fitWidth="210.0" layoutX="20.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                        <clip>
+                           <Rectangle arcHeight="25.0" arcWidth="25.0" height="210.0" width="210.0" />
+                        </clip>
+                        <Image url="@menu/zengreenmatcha.jpg" />
+                        <viewport>
+                           <Rectangle2D minX="210.0" minY="210.0" />
+                        </viewport>
+                     </ImageView>
+                     <Label layoutX="265.0" layoutY="35.0" prefHeight="38.0" prefWidth="405.0" text="Zen Green Matcha" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                        <font>
+                           <Font name="Segoe UI Semibold" size="34.0" />
+                        </font>
+                     </Label>
+                     <Label layoutX="265.0" layoutY="85.0" lineSpacing="5.0" prefHeight="81.0" prefWidth="366.0" text=" — Pure matcha perfection, blending vibrant green tea leaves." textFill="WHITE" wrapText="true">
+                        <font>
+                           <Font name="Verdana" size="18.0" />
+                        </font>
+                     </Label>
+                     <Label layoutX="262.0" layoutY="182.0" prefHeight="41.0" prefWidth="100.0" text="₱ 150" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                        <font>
+                           <Font name="Ebrima Bold" size="32.0" />
+                        </font>
+                     </Label>
+                     <Button fx:id="item6" blendMode="MULTIPLY" defaultButton="true" mnemonicParsing="false" onAction="#initialize" opacity="0.0" prefHeight="250.0" prefWidth="700.0" text="ADD" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                           <Font name="Monospaced Bold" size="20.0" />
+                        </font>
+                        <effect>
+                           <Blend />
+                        </effect>
+                        <cursor>
+                           <Cursor fx:constant="HAND" />
+                        </cursor>
+                     </Button>
+                  </Pane>
+                  <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="580.0" style="-fx-background-color: #1b2331; -fx-border-radius: 9; -fx-background-radius: 9; -fx-border-color: white; -fx-border-width: 1;" styleClass="transparent-pane" stylesheets="@style.css">
+                     <effect>
+                        <DropShadow offsetX="9.0" offsetY="9.0">
+                           <color>
+                              <Color red="0.7105262875556946" green="0.7105262875556946" blue="0.7105262875556946" opacity="0.6299999952316284" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <ImageView blendMode="SOFT_LIGHT" cache="true" fitHeight="250.0" fitWidth="700.0" pickOnBounds="true">
+                        <Image url="@background/menu_background.jpg" />
+                     </ImageView>
+                     <ImageView fitHeight="210.0" fitWidth="210.0" layoutX="20.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                        <clip>
+                           <Rectangle arcHeight="25.0" arcWidth="25.0" height="210.0" width="210.0" />
+                        </clip>
+                        <Image url="@menu/cappucloud.jpg" />
+                        <viewport>
+                           <Rectangle2D minX="210.0" minY="210.0" />
+                        </viewport>
+                     </ImageView>
+                     <Label layoutX="265.0" layoutY="35.0" prefHeight="38.0" prefWidth="405.0" text="CappuCloud" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                        <font>
+                           <Font name="Segoe UI Semibold" size="34.0" />
+                        </font>
+                     </Label>
+                     <Label layoutX="265.0" layoutY="85.0" lineSpacing="5.0" prefHeight="79.0" prefWidth="351.0" text=" — Espresso, Velvety Steamed Milk, and Cloud-like Foam." textFill="WHITE" wrapText="true">
+                        <font>
+                           <Font name="Verdana" size="18.0" />
+                        </font>
+                     </Label>
+                     <Label layoutX="262.0" layoutY="182.0" prefHeight="41.0" prefWidth="100.0" text="₱ 125" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                        <font>
+                           <Font name="Ebrima Bold" size="32.0" />
+                        </font>
+                     </Label>
+                     <Line endX="288.0" layoutX="379.0" layoutY="164.0" startX="-110.0" stroke="#ab7c25" strokeWidth="2.0" />
+                     <Button fx:id="item7" blendMode="MULTIPLY" defaultButton="true" mnemonicParsing="false" onAction="#initialize" opacity="0.0" prefHeight="250.0" prefWidth="700.0" text="ADD" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                           <Font name="Monospaced Bold" size="20.0" />
+                        </font>
+                        <effect>
+                           <Blend />
+                        </effect>
+                        <cursor>
+                           <Cursor fx:constant="HAND" />
+                        </cursor>
+                     </Button>
+                  </Pane>
+               </VBox>
+            </ScrollPane>
+            <ToolBar layoutX="1233.0" layoutY="79.0" prefHeight="62.0" prefWidth="359.0" styleClass="transparent" stylesheets="@style.css">
+               <Button fx:id="sortAZ" graphicTextGap="0.0" mnemonicParsing="false" onAction="#initialize" prefHeight="36.0" prefWidth="64.0" style="-fx-background-radius: 9;" styleClass="filter-button" stylesheets="@style.css" text="A-Z" wrapText="true">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+                  <font>
+                     <Font name="Verdana Bold" size="9.0" />
+                  </font>
+               </Button>
+               <Button fx:id="sortZA" graphicTextGap="0.0" mnemonicParsing="false" onAction="#initialize" prefHeight="36.0" prefWidth="64.0" style="-fx-background-radius: 9;" styleClass="filter-button" stylesheets="@style.css" text="Z-A" wrapText="true">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+                  <font>
+                     <Font name="Verdana Bold" size="9.0" />
+                  </font>
+               </Button>
+               <Button fx:id="sortHighLow" graphicTextGap="0.0" mnemonicParsing="false" onAction="#initialize" prefHeight="36.0" prefWidth="100.0" style="-fx-background-radius: 9;" styleClass="filter-button" stylesheets="@style.css" text="HIGH - LOW" wrapText="true">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+                  <font>
+                     <Font name="Verdana Bold" size="9.0" />
+                  </font>
+               </Button>
+               <Button fx:id="sortLowHigh" graphicTextGap="0.0" mnemonicParsing="false" onAction="#initialize" prefHeight="36.0" prefWidth="100.0" style="-fx-background-radius: 9;" styleClass="filter-button" stylesheets="@style.css" text="LOW - HIGH" wrapText="true">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+                  <font>
+                     <Font name="Verdana Bold" size="9.0" />
+                  </font>
+               </Button>
+            </ToolBar>
+            <ImageView fitHeight="593.0" fitWidth="390.0" layoutX="1491.0" layoutY="324.0" pickOnBounds="true" preserveRatio="true" rotate="-35.1">
+               <effect>
+                  <ColorAdjust brightness="-0.24" contrast="-0.05" saturation="-0.02">
+                     <input>
+                        <DropShadow height="114.79" radius="48.102500000000006" spread="0.44" width="79.62" />
+                     </input>
+                  </ColorAdjust>
+               </effect>
+               <Image url="@background/order_coffeebeancup.png" />
+            </ImageView>
+            <Button fx:id="confirm" layoutX="1323.0" layoutY="640.0" mnemonicParsing="false" onAction="#confirmOrder" prefHeight="47.0" prefWidth="460.0" style="-fx-background-color: #1da81d; -fx-border-radius: 7;" text="Proceed To Payment" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ListView fx:id="orderList" layoutX="866.0" layoutY="143.0" onEditCommit="#initialize" prefHeight="484.0" prefWidth="913.0" style="-fx-border-radius: 9; -fx-background-color: white; -fx-background-radius: 12; -fx-border-width: 1.5; -fx-border-color: #d4b272;" stylesheets="@style.css">
+               <styleClass>
+                  <String fx:value="round-pane" />
+                  <String fx:value="transparent" />
+               </styleClass>
+            </ListView>
+         </AnchorPane>
+      </Tab>
+      <Tab styleClass="custom-tab2" text="Order History">
+         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+            <ImageView fitHeight="787.0" fitWidth="1830.0" pickOnBounds="true">
+               <Image url="@background/banner_gradient.png" />
+            </ImageView>
+            <ImageView blendMode="SOFT_LIGHT" fitHeight="818.0" fitWidth="1265.0" layoutX="-7.0" pickOnBounds="true">
+               <effect>
+                  <ColorAdjust brightness="-0.24" contrast="-0.21" />
+               </effect>
+               <Image url="@background/history_texture.jpg" />
+            </ImageView>
+            <ImageView fitHeight="491.0" fitWidth="317.0" layoutX="-22.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <ColorAdjust brightness="0.05" contrast="0.02" saturation="0.05">
+                     <input>
+                        <DropShadow height="116.27" radius="56.535" spread="0.35" width="111.87" />
+                     </input>
+                  </ColorAdjust>
+               </effect>
+               <Image url="@background/history_capybara.png" />
+            </ImageView>
+            <Label layoutX="199.0" layoutY="124.0" prefHeight="62.0" prefWidth="340.0" text="Order History">
+               <font>
+                  <Font name="System Bold" size="51.0" />
+               </font>
+            </Label>
+            <Button fx:id="previous" layoutX="720.0" layoutY="161.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="100.0" styleClass="filter-button" stylesheets="@style.css" text="&lt;" />
+            <Button fx:id="next" layoutX="826.0" layoutY="161.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="100.0" styleClass="filter-button" stylesheets="@style.css" text="&gt;" />
+            <TextArea fx:id="historyPane" editable="false" layoutX="199.0" layoutY="205.0" prefHeight="477.0" prefWidth="733.0" style="-fx-border-color: #c08d2c; -fx-border-width: 2;" />
+            <ImageView fitHeight="386.0" fitWidth="541.0" layoutX="-78.0" layoutY="-26.0" pickOnBounds="true" preserveRatio="true" rotate="47.6">
+               <effect>
+                  <ColorAdjust brightness="-0.21" contrast="0.05" saturation="-0.09">
+                     <input>
+                        <DropShadow height="50.31" radius="23.9225" spread="0.36" width="47.38" />
+                     </input>
+                  </ColorAdjust>
+               </effect>
+               <Image url="@background/history_coffecup.png" />
+            </ImageView>
+            <ImageView fitHeight="641.0" fitWidth="460.0" layoutX="1540.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+               <effect>
+                  <ColorAdjust contrast="0.02" saturation="-0.16">
+                     <input>
+                        <DropShadow height="171.215" radius="84.19125" spread="0.15" width="167.55">
+                           <color>
+                              <Color red="0.049707602709531784" green="0.06954190880060196" blue="0.15789473056793213" opacity="0.6200000047683716" />
+                           </color>
+                        </DropShadow>
+                     </input>
+                  </ColorAdjust>
+               </effect>
+               <Image url="@background/history_coffeecups.png" />
+            </ImageView>
+            <Label contentDisplay="CENTER" graphicTextGap="6.0" layoutX="1396.0" layoutY="98.0" lineSpacing="4.0" prefHeight="90.0" prefWidth="345.0" style="-fx-alignment: center; -fx-text-fill: #ffbc3f;" text="About Us" textFill="#ffbc3f">
+               <font>
+                  <Font name="MS PGothic" size="60.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label layoutX="1383.0" layoutY="194.0" lineSpacing="5.0" prefHeight="400.0" prefWidth="371.0" style="-fx-alignment: center; -fx-line-spacing: 5;" text="Elevate your coffee experience in the heart of our community with CafeBara, where we curate artisanal brews crafted to perfection. Immerse yourself in the inviting ambiance as you discover a &quot;capy&quot;-tal blend of sophistication and satisfaction.Our carefully selected coffee offerings are designed to cater to the discerning taste buds, providing a delightful journey through the world of rich flavors and aromatic nuances. Join us at CafeBara, where every cup is a celebration of quality, community, and the pursuit of coffee excellence." textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Verdana" size="16.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Line endX="-65.0" endY="680.0" layoutX="1323.0" layoutY="105.0" startX="-65.0" startY="-105.0" stroke="#f5b43c" strokeWidth="2.0" />
+            <ImageView fitHeight="587.0" fitWidth="402.0" layoutX="981.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow height="132.38" radius="60.5625" spread="0.24" width="111.87" />
+               </effect>
+               <Image url="@background/history_coffeesack.png" />
+            </ImageView>
+         </AnchorPane>
+      </Tab>
+   </TabPane>
+</AnchorPane>
